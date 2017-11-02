@@ -1,3 +1,7 @@
+/* 	Starboy
+	02/11/2017
+	t = 0.210s
+*/
 #include <bits/stdc++.h>
 #define rep(i,b,c) for(int i = b;i<c;i++)
 #define x first
@@ -75,7 +79,7 @@ int main(){
 			}
 		int s  = 1;
 		double d;
-		rep(j,0,v){
+		rep(j,i,v){
 			ii atual = vertex[j];
 			
 			rep(k,0,v){
@@ -96,7 +100,6 @@ int main(){
 		double b = kruskal(v,gshort,s);
 		lli a1 = (lli)round(a-b);
 		lli b1 = (lli)round(b);
-		//cout <<b<<endl;
 		printf("Case #%d: %d %lld %lld\n",i+1,v-s+1,b1,a1);
 		
 
